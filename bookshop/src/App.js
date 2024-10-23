@@ -1,56 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
-import Products from './components/Products.js';
-import { useState } from 'react';
-import Cart from './components/Cart.js';
-import konyvLista from './components/konyvLista.js';
+import Products from "./components/Products.js";
+import { useState } from "react";
+import Cart from "./components/Cart.js";
+import konyvLista from "./components/konyvLista.js";
+import {sumPrice, genFilter} from "./components/functions.js";
+import navList from "./components/navList.js";
+import NavBar from "./components/NavBar.js";
 
 function App() {
-  const bookList = konyvLista; 
+  const nav=navList
+  const bookList = konyvLista;
+  const [bookListClone, setBookList]=useState(bookList);
   const [buyList, setList] = useState([]);
 
   function click(adat) {
-      const cl = [...buyList]; 
-      cl.push(bookList[adat]);
-      setList(cl);
-     
+    const cl = [...buyList];
+    cl.push(bookList[adat]);
+    setList(cl);
   }
-  function del(data){
-    const clonL=[...buyList]
-    clonL.splice(data,1)
-    setList(clonL)
-  
-    
-}
-
-function sumPrice() {
-  let sumPrice = 0;
-  buyList.forEach((elem) => {
-    sumPrice += elem.price;
-  });
-  return sumPrice.toFixed(2);
+  function del(data) {
+    const clonL = [...buyList];
+    clonL.splice(data, 1);
+    setList(clonL);
+  }
+  function choose(adat) {
+    setBookList(genFilter(adat, bookList));
 }
 
 
-
-
-
-
-  
   return (
     <div className="App">
       <header className="App-header">
-      <h2>Pages & Co.</h2>
+        <a href="index.js"><h2>Pages & Co.</h2></a>
+        <nav>
+          <NavBar list={nav} choose={choose}/>
+        </nav>
       </header>
       <article>
-        <div className='products'>
-          <Products list={bookList} click={click}/>
+        <div className="products">
+          <Products list={bookListClone} click={click} />
         </div>
         <div className={`cart`}>
-          <Cart list={buyList} sum={sumPrice()} del={del}/>
+          <Cart list={buyList} sum={sumPrice(buyList)} del={del} />
         </div>
-
       </article>
     </div>
   );

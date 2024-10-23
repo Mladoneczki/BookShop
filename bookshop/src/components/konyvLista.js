@@ -34,7 +34,7 @@ const konyvLista = [
     {
         title: "Dark Reflections",
         author: "Samuel R. Delany",
-        genre: "Dark Fantasy",
+        genre: "Fantasy",
         image: `${process.env.PUBLIC_URL}/kepek/11.jpg`,
         price: 11.99,
         blurb: "A dark journey of self-discovery where shadows hold more than secrets."
@@ -90,7 +90,7 @@ const konyvLista = [
     {
         title: "Jane Eyre",
         author: "Charlotte Brontë",
-        genre: "Classic, Gothic Romance",
+        genre: "Classic",
         image: `${process.env.PUBLIC_URL}/kepek/19.jpg`,
         price: 7.99,
         blurb: "An orphaned governess's journey of self-respect, love, and independence."
@@ -98,7 +98,7 @@ const konyvLista = [
     {
         title: "Macbeth",
         author: "William Shakespeare",
-        genre: "Classic, Tragedy",
+        genre: "Classic",
         image: `${process.env.PUBLIC_URL}/kepek/23.jpg`,
         price: 5.99,
         blurb: "The haunting tragedy of ambition and power that spirals into madness."
@@ -106,7 +106,7 @@ const konyvLista = [
     {
         title: "The Count of Monte Cristo",
         author: "Alexandre Dumas",
-        genre: "Classic, Adventure",
+        genre: "Classic",
         image: `${process.env.PUBLIC_URL}/kepek/20.jpg`,
         price: 9.99,
         blurb: "A timeless tale of betrayal and vengeance in 19th-century France."
@@ -114,7 +114,7 @@ const konyvLista = [
     {
         title: "The Metamorphosis",
         author: "Franz Kafka",
-        genre: "Classic, Absurdism",
+        genre: "Classic",
         image: `${process.env.PUBLIC_URL}/kepek/25.jpg`,
         price: 6.99,
         blurb: "A man wakes up to find himself transformed into a monstrous insect."
@@ -122,7 +122,7 @@ const konyvLista = [
     {
         title: "The Great Gatsby",
         author: "F. Scott Fitzgerald",
-        genre: "Classic, Tragedy",
+        genre: "Classic",
         image: `${process.env.PUBLIC_URL}/kepek/14.jpg`,
         price: 8.49,
         blurb: "A tragic love story set in the glitz and glam of the roaring 1920s."
@@ -130,7 +130,7 @@ const konyvLista = [
     {
         title: "Hamlet",
         author: "William Shakespeare",
-        genre: "Classic, Tragedy",
+        genre: "Classic",
         image: `${process.env.PUBLIC_URL}/kepek/4.jpg`,
         price: 5.99,
         blurb: "The story of a prince torn between vengeance and his moral conscience."
@@ -138,7 +138,7 @@ const konyvLista = [
     {
         title: "Great Expectations",
         author: "Charles Dickens",
-        genre: "Classic, Coming of Age",
+        genre: "Classic",
         image: `${process.env.PUBLIC_URL}/kepek/15.jpg`,
         price: 7.49,
         blurb: "The story of an orphan, Pip, and his journey through life and ambition."
@@ -170,7 +170,7 @@ const konyvLista = [
     {
         title: "Nobody's Home",
         author: "D.M. Pulley",
-        genre: "Horror",
+        genre: "Thriller",
         image: `${process.env.PUBLIC_URL}/kepek/17.jpg`,
         price: 12.99,
         blurb: "A family moves into a haunted house with a history of unspeakable horrors."
@@ -178,7 +178,7 @@ const konyvLista = [
     {
         title: "Crimson Rivers",
         author: "Jean-Christophe Grangé",
-        genre: "Crime, Thriller",
+        genre: "Thriller",
         image: `${process.env.PUBLIC_URL}/kepek/3.jpg`,
         price: 10.49,
         blurb: "Two detectives uncover a chilling conspiracy in a remote French village."
@@ -186,7 +186,7 @@ const konyvLista = [
     {
         title: "Detective Stories",
         author: "Ken Adams",
-        genre: "Crime, Mystery",
+        genre: "Thriller",
         image: `${process.env.PUBLIC_URL}/kepek/6.jpg`,
         price: 8.99,
         blurb: "A collection of gripping detective tales filled with mystery and suspense."
@@ -194,7 +194,7 @@ const konyvLista = [
     {
         title: "A Good Girl's Guide to Murder",
         author: "Holly Jackson",
-        genre: "YA, Mystery",
+        genre: "Thriller",
         image: `${process.env.PUBLIC_URL}/kepek/2.jpg`,
         price: 9.99,
         blurb: "A high schooler investigates a cold case in this gripping YA mystery."
@@ -202,7 +202,7 @@ const konyvLista = [
     {
         title: "The Killer's Girl",
         author: "Helen Phifer",
-        genre: "Crime, Thriller",
+        genre: "Thriller",
         image: `${process.env.PUBLIC_URL}/kepek/8.jpg`,
         price: 10.49,
         blurb: "A gripping thriller about a woman discovering her father's dark legacy."
@@ -210,7 +210,7 @@ const konyvLista = [
     {
         title: "Mr. Sherlock Holmes",
         author: "Arthur Conan Doyle",
-        genre: "Classic, Mystery",
+        genre: "Classic",
         image: `${process.env.PUBLIC_URL}/kepek/1.jpg`,
         price: 6.49,
         blurb: "The brilliant detective solves the most baffling mysteries in London."
