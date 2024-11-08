@@ -1,8 +1,8 @@
 import "./product.css";
+import { KattContext } from "../context/KattContext"
+import { useContext } from "react";
 export default function Product(props) {
-  function click() {
-    props.click(props.index);
-  }
+  const {click}=useContext(KattContext)
 
   return (
     <div className="product">
@@ -13,7 +13,7 @@ export default function Product(props) {
         <p className="price">{props.book.price}$</p>
         <button
           onClick={() => {
-            click();
+            click(props.index);
           }}
         >
           Buy

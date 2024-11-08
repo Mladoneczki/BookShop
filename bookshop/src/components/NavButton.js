@@ -1,9 +1,9 @@
+import { useContext } from "react"
+import { KattContext } from "../context/KattContext"
+
 export default function NavButton(props) {
-    function choose() {
-        console.log("katt")
-      props.choose(props.id);
-    }
+  const {choose}=useContext(KattContext)
   
     return (
-        <button id={props.id} onClick={()=>{choose()}}>{props.text}</button>
+        <button id={props.id} onClick={()=>{choose(props.id)}}>{props.text}</button>
     )}

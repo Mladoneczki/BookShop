@@ -1,15 +1,13 @@
 import CartItem from "./CartItem";
 
 export default function Cart(props) {
-  function del(data){
-    props.del(data)
-}
+ 
   const listLenght=props.list.length
   let hideClass=""
     if ( listLenght === 0) {
         return <p>Your cart is empty 🛒 </p>
       }
-    if(listLenght>=15){
+    if(listLenght>=10){
       hideClass="hide"
 
     }
@@ -17,7 +15,7 @@ export default function Cart(props) {
   return (
     <>
       {props.list.map((book, i) => {
-        return <CartItem className={hideClass} book={book} index={i} key={i} del={del}/>
+        return <CartItem className={hideClass} book={book} index={i} key={i}/>
       })}
       <h3>Total:  {props.sum}$</h3>
     </>

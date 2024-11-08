@@ -1,14 +1,12 @@
 import { useState } from "react";
+function Choosing(genre, list){
+    const choosedList = list.filter((element) => element.genre === genre);
 
- function sumPrice(buyList) {
-    let sumPrice = 0;
-    buyList.forEach((elem, i) => {
-      sumPrice += elem.price;
-    });
-    return sumPrice.toFixed(2);
-  }
-
- function genFilter(buttonId, defList){
+    return choosedList
+  
+   }
+ 
+function genFilter(buttonId, defList){
     let choosedBooks=[];
     if(buttonId==0){
        choosedBooks=[...defList]
@@ -38,12 +36,4 @@ import { useState } from "react";
     return genre
     
    }
-  
-   function Choosing(genre, list){
-    const choosedList = list.filter((element) => element.genre === genre);
-
-    return choosedList
-  
-   }
-  
-   export {sumPrice, genFilter}
+   export {genFilter}
